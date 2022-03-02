@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa"; //have to npm install react-icons
-import "../css/Product.css";
+import "../css/Favorites.css";
 
 const Favorites = (props) => {
   const [isFavorited, setFavorited] = useState(false);
