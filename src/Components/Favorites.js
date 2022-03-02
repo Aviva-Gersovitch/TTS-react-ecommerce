@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaStar } from "react-icons/fa"; //have to npm install react-icons
 import "../css/Product.css";
 
-const Product = (props) => {
+const Favorites = (props) => {
   const [isFavorited, setFavorited] = useState(false);
   let favListHeader = "";
   let favList = [];
@@ -16,7 +16,7 @@ const Product = (props) => {
         remove it.
       </p>
     );
-    favList.push(Product);
+    favList.push(Favorites);
 
     favListHeader = (
     <p>Your Favorites: </p> );
@@ -31,18 +31,13 @@ const Product = (props) => {
       This product is not in your favorites. Click the yellow star to add it.
     </p>);
 
-    favList.splice(Product.key, 1);
+    favList.splice(Favorites.key, 1);
 
     console.log(favList);    //can remove, just checking to see if it is actually removing something from the array
   }
 
   return (
     <div>
-      {props.img}
-      <h1>{props.name}</h1>
-      <h2>{props.price}</h2>
-      <p>{props.description}</p>
-      <p>
         <label>
           <input
             type="radio"
@@ -55,7 +50,6 @@ const Product = (props) => {
             color={isFavorited ? "ffc107" : "e4e5e9"}
           />
         </label>
-      </p>
 
       {starLabel}
       {defaultLabel}
@@ -65,4 +59,4 @@ const Product = (props) => {
   );
 };
 
-export default Product;
+export default Favorites;

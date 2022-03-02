@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Product from "./Product.js";
+import Favorites from "./Favorites.js";
 
 
 class Page extends Component {
@@ -17,7 +17,7 @@ class Page extends Component {
             <input type="search" placeholder="Search for an item" />
             </form>
         </div>
-        <Product 
+        <Favorites 
         name="Spiralizer" 
         img ="image.jpg"     //Not currently working
         price="$25" 
