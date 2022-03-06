@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Favorites from "./Favorites.js";
+import {Favorites} from "./Favorites";
 
 
 class Page extends Component {
@@ -11,7 +11,9 @@ class Page extends Component {
   render() {
     return (
       <div>
-        <div className="search-bar">
+        <Favorites />
+
+        {/* <div className="search-bar">
           <form className="mb-3">
             <label>Search</label>
             <input type="search" placeholder="Search for an item" />
@@ -23,7 +25,7 @@ class Page extends Component {
         price="$25" 
         description="A healthier alternative to pasta, make noodles out of your favorite
         veggies. Not noodles, but zoodles (zucchini noodles). What fun!" 
-        key= "1" />
+    key= "1" /> */ }
       </div>
     );
   }

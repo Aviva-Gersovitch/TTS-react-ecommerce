@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaStar } from "react-icons/fa"; //have to npm install react-icons
 import "../css/Favorites.css";
 
-const Favorites = (props) => {
+const OldFavorites = (props) => {
   const [isFavorited, setFavorited] = useState(false);
   let favListHeader = "";
   let favList = [];
@@ -59,4 +59,4 @@ const Favorites = (props) => {
   );
 };
 
-export default Favorites;
+export default OldFavorites;
